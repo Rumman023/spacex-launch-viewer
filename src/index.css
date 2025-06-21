@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-900 text-white;
+  }
+}
+
+@layer components {
+  .launch-card {
+    @apply bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-700;
+  }
+  
+  .success-badge {
+    @apply bg-green-500 text-white px-2 py-1 rounded-full text-xs font-semibold;
+  }
+  
+  .failed-badge {
+    @apply bg-red-500 text-white px-2 py-1 rounded-full text-xs font-semibold;
+  }
+  
+  .upcoming-badge {
+    @apply bg-blue-500 text-white px-2 py-1 rounded-full text-xs font-semibold;
+  }
+}
